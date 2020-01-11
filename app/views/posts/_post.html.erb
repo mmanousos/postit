@@ -20,13 +20,9 @@
     <p><%= post.description %></p>
   
     <p>
-      <span class='quiet'>posted </span>
-      <%
-=begin%>
-<span class='quiet'>by</span> 
-      <%= post.creator.username %>  
-<%
-=end%>
+      <span class='quiet'>posted by</span>  
+      <%= link_to post.creator.username, user_path(post.user_id) %>   
+
       <small>at <%= display_datetime(post.created_at) %></small>
     </p>  
     <small>
