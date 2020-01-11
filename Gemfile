@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'bootstrap-sass', '~> 2.3.1'
+gem 'twitter-bootstrap-rails'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
 

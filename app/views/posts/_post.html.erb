@@ -7,7 +7,13 @@
     <p><%= post.description %></p>
     
     <p>
-      <span class='quiet'>posted by</span> <%= post.creator.username %> 
+      <span class='quiet'>posted </span>
+      <%
+=begin%>
+ <span class='quiet'>by</span> 
+      <%= post.creator.username %>  
+<%
+=end%>
       <small>at <%= display_datetime(post.created_at) %></small>
     </p>  
     <small>
